@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     Swal.fire({
         title: 'Escribir nombre',
         input: 'text',
-        allowOutsideClick:false
+        inputValidator: (value) => {
+            return !value && 'Necesitas escribir un nombre de usuario para conectarse'
+        },
+        toast: true
     }).then(result=>{
         user=result.value
         socket.emit('identificarse', user)

@@ -13,6 +13,7 @@ app.set("view engine", "handlebars")
 app.set("views", __dirname + "/views")
 app.use(express.static(__dirname + "/public"))
 app.use("/api", viewsrouter)
+app.use('/css', express.static('public/css'));
 
 const messages = []
 let users = []

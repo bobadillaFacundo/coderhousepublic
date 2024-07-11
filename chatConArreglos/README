@@ -17,4 +17,9 @@ Ejecución del contenedor:
 Una vez que la imagen se haya construido correctamente, puedes ejecutar un contenedor basado en esta imagen:
 
 Copiar código
-docker run -p 8082:8082 -d nombre-de-tu-imagen
+docker run -p 8080:8080 -d nombre-de-tu-imagen
+
+
+Despues habrir en el puerto http://localhost:8080/api todos los clientes que queramos
+
+Todo se guarda en memoria por lo que los archvos se pierden al bajar el container

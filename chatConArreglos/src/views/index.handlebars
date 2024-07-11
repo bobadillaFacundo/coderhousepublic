@@ -1,19 +1,16 @@
 <div>
-    <h1>Enviar String</h1>
+    <h1>Chat CoderHouse</h1>
 </div>
-<style>
-  .oculto {
-    visibility: hidden;
-  }
-</style>
-<div>
 <input  class="oculto" id='tex' >
-</div>
-<input type="text" placeholder="string" name='input' id="input"> 
+<div class="chat-container">
+<input type="text" placeholder="escribi" name='input' id="input"> 
 <button id="enviar">Enviar</button>
 <br>
 <br>
+<div class="chat-input">
 <textarea id='texto' cols="100" rows="15" style="resize: both;" ></textarea>
+</div>
+</div>
 <script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/index.js"></script>
