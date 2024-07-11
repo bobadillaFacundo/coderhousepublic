@@ -12,7 +12,6 @@ Construcción de la imagen Docker:
 
 Desde la línea de comandos, en el directorio donde se encuentra tu Dockerfile, ejecuta el siguiente comando para construir la imagen Docker:
 
-Copiar código
 
               docker build -t nombre-de-tu-imagen .
 
@@ -21,8 +20,6 @@ Sustituye nombre-de-tu-imagen por el nombre que quieras darle a tu imagen Docker
 Ejecución del contenedor:
 
 Una vez que la imagen se haya construido correctamente, puedes ejecutar un contenedor basado en esta imagen:
-
-Copiar código
 
               docker run -p 8080:8080 -d nombre-de-tu-imagen
 
