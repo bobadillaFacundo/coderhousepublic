@@ -6,7 +6,7 @@ docker ultima version
 
 Preparación de la aplicación:
 
-Asegúrate de tener un directorio local que contenga todos los archivos necesarios para tu aplicación Node.js, incluido el package.json que lista las dependencias.
+Asegúrate de tener de clonar este directorio en tu maquina local 
 
 Construcción de la imagen Docker:
 
