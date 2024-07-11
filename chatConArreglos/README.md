@@ -26,4 +26,4 @@ Una vez que la imagen se haya construido correctamente, puedes ejecutar un conte
 
 Despues habrir en el puerto http://localhost:8080/api todos los clientes que queramos
 
-Todo se guarda en memoria por lo que los archvos se pierden al bajar el container
+Todo se guarda en memoria por lo que los datos se pierden a dar de baja el container
