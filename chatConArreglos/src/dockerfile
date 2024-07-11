@@ -1,0 +1,21 @@
+# Usa la imagen base de Node.js versión 14
+FROM node:19
+
+# Establece el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copia el archivo package.json y package-lock.json (si existe) al directorio de trabajo
+COPY package.json .
+COPY package-lock.json .
+
+# Instala las dependencias del proyecto
+RUN npm install
+
+# Copia todo el contenido del directorio actual al directorio de trabajo dentro del contenedor
+COPY . .
+
+# Expone el puerto 3000 para que las aplicaciones puedan acceder a ella
+EXPOSE 8080
+
+# Comando para ejecutar la aplicación
+CMD ["node", "app.js"]

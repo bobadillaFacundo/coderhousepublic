@@ -1,0 +1,20 @@
+Necesitas:
+
+node.js v19
+docker ultima version
+
+Preparación de la aplicación:
+Asegúrate de tener un directorio local que contenga todos los archivos necesarios para tu aplicación Node.js, incluido el package.json que lista las dependencias.
+
+Construcción de la imagen Docker:
+Desde la línea de comandos, en el directorio donde se encuentra tu Dockerfile, ejecuta el siguiente comando para construir la imagen Docker:
+
+Copiar código
+docker build -t nombre-de-tu-imagen .
+Sustituye nombre-de-tu-imagen por el nombre que quieras darle a tu imagen Docker.
+
+Ejecución del contenedor:
+Una vez que la imagen se haya construido correctamente, puedes ejecutar un contenedor basado en esta imagen:
+
+Copiar código
+docker run -p 8082:8082 -d nombre-de-tu-imagen
