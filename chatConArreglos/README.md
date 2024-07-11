@@ -14,7 +14,7 @@ Desde la línea de comandos, en el directorio donde se encuentra tu Dockerfile, 
 
 Copiar código
 
-docker build -t nombre-de-tu-imagen .
+              docker build -t nombre-de-tu-imagen .
 
 Sustituye nombre-de-tu-imagen por el nombre que quieras darle a tu imagen Docker.
 
@@ -24,7 +24,7 @@ Una vez que la imagen se haya construido correctamente, puedes ejecutar un conte
 
 Copiar código
 
-docker run -p 8080:8080 -d nombre-de-tu-imagen
+              docker run -p 8080:8080 -d nombre-de-tu-imagen
 
 
 Despues habrir en el puerto http://localhost:8080/api todos los clientes que queramos
