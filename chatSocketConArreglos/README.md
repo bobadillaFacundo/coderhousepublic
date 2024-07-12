@@ -19,7 +19,7 @@ Sustituye nombre-de-tu-imagen por el nombre que quieras darle a tu imagen Docker
 
 Ejecución del contenedor:
 
-Una vez que la imagen se haya construido correctamente, puedes ejecutar un contenedor basado en esta imagen:
+Una vez que la imagen se haya construido correctamente, puedes ejecutar un contenedor con el siguiente comando
 
               docker run -p 8080:8080 -d nombre-de-tu-imagen
 
